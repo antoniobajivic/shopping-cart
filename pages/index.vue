@@ -83,7 +83,7 @@ export default {
       products: products,
       cart: [],
       cartDrawer: false,
-      finalPrice: 0,
+      finalPrice: 0
     };
   },
 
@@ -103,6 +103,7 @@ export default {
           .indexOf(product.id);
         this.cart[index].quantity += 1;
         this.cart[index].price.amount += product.price.amount;
+        this.cart[index].price.amount = Math.round(this.cart[index].price.amount * 1e2) /1e2;
       } else {
         product.quantity = 1;
         let productClone = cloneDeep(product);
