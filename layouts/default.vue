@@ -5,6 +5,7 @@
       fixed
       app
     >
+    <v-toolbar-title>Trgovina</v-toolbar-title>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -15,7 +16,7 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>Antonio Bajivić &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
