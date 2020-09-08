@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
+    "lodash": "^4.17.20",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
